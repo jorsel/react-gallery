@@ -1,0 +1,26 @@
+.img-container {
+    min-width: 320px;
+    max-height: auto;
+    height:auto;
+    width: 320px;
+    background-color: black;
+    border-radius: 4px;
+    /*
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    */
+    margin-left: 10px;
+    
+  }
+.title{
+    color: white;
+    font-family: GalleryModern;
+}
+.creditText{
+    color: white;
+    font-family: GalleryModern;
+}
+.root-container{
+    float: left;
+}

@@ -1,0 +1,70 @@
+.App {
+  text-align: center;
+  background-color:#282c34;
+  min-height: 98vh;
+  border-style: solid;
+  border-color: white;
+  border-width: 10px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 150px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Gallery {
+  display: grid;
+  /*grid-auto-flow: column;*/
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  /* Set to same size as picture thumbnail, 
+  this will resize when screen is too narrow  */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-rows: repeat(2, 300px);
+  font-family: GalleryModern;
+  align-items: center;
+}
+#title{
+  font-family: GalleryModern;
+  grid-column-start: 2;
+  grid-column-end: 2;
+}
+#medialinks {
+  grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 1;
+}
+
+
+
